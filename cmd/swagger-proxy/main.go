@@ -10,8 +10,8 @@ import (
 	"path/filepath"
 	"time"
 
+	proxy "github.com/Irioth/swagger-proxy"
 	"github.com/fsnotify/fsnotify"
-	proxy "github.com/gchaincl/swagger-proxy"
 	"github.com/go-openapi/loads"
 )
 
@@ -25,7 +25,7 @@ func serve(proxy *proxy.Proxy, bind string) error {
 
 	errC := make(chan error)
 	go func() {
-		log.Println("SwaggerProxy", version, "listening on", bind, "->", proxy.Target())
+		log.Println("Fixed SwaggerProxy", version, "listening on", bind, "->", proxy.Target())
 		errC <- s.ListenAndServe()
 	}()
 

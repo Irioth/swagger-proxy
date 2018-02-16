@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	proxy "github.com/gchaincl/swagger-proxy"
+	proxy "github.com/Irioth/swagger-proxy"
 	"github.com/go-openapi/loads"
 	"github.com/stretchr/testify/require"
 )

@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	proxy "github.com/gchaincl/swagger-proxy"
+	proxy "github.com/Irioth/swagger-proxy"
 	"github.com/go-openapi/loads"
 )
 
